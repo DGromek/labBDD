@@ -1,5 +1,6 @@
 package edu.iis.mto.bdd.trains.model;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -36,7 +37,7 @@ public class Line {
     }
 
     public Line withStations(String... stations) {
-        return new Line(this.line, this.departingFrom, Arrays.asList(stations));
+        return new Line(this.line, this.departingFrom, new ArrayList<>(Arrays.asList(stations)));
     }
 
     public static LineBuilder named(String lineName) {
