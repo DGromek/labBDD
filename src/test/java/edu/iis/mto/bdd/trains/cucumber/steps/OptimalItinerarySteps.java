@@ -29,26 +29,4 @@ public class OptimalItinerarySteps {
     public void shouldBeInformedAbout(@Transform(JodaLocalTimeConverter.class) List<LocalTime> expectedTrainTimes) {
         throw new PendingException();
     }
-
-    //Scenario 2
-    @Zakładając("^chcę się dostać z \"([^\"]*)\" do \"([^\"]*)\"$")
-    public void chcęSięDostaćZDo(String departure, String destination) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    @I("^następny pociąg odjeżdża o (.*) na linii \"([^\"]*)\"$")
-    public void następnyPociągOdjeżdżaONaLinii(@Transform(JodaLocalTimeConverter.class) LocalTime departureTime, String line)
-            throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    @Gdy("^zapytam o godzinę przyjazdu$")
-    public void zapytamOGodzinęPrzyjazdu() {
-    }
-
-    @Wtedy("^powinienem uzyskać następujący szacowany czas przyjazdu: (.*)$")
-    public void powinienemUzyskaćNastępującySzacowanyCzasPrzyjazdu(@Transform(JodaLocalTimeConverter.class) LocalTime arrivalTime) {
-    }
 }
